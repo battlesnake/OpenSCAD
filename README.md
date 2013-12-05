@@ -1,3 +1,15 @@
+# What changes have been made to this OpenSCAD?
+
+1. Everytime I try to use an open/save dialog, OpenSCAD vanishes without so much as an error message (wow I miss Windows error dialogs at times).  Running from console, all I get is some meaningless Qt-related error.
+   Dirty solution: Use Qt5 instead of Qt4.
+   
+2. OpenSCAD doesn't build properly with gcc-4.8 (specifically, I get segfaults when trying to render ANYTHING).
+   Solution: Modify makefile to use gcc-4.7
+   
+Beyond those changes, everything else is "original" and "unmodified".
+
+Below follows the original README:
+
 # What is OpenSCAD?
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=openscad&url=http://openscad.org&title=OpenSCAD&language=&tags=github&category=software)
 
